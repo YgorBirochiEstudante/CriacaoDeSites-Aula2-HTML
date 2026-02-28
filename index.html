@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2 - HTML listas</title>
+    <title>Aula 2 – Listas Ordenadas e Não Ordenadas</title>
 </head>
 
 <body>
-    <a href="pagina1.html">página de links 1</a>
+    <h1>Aula 2 – Listas Ordenadas e Não Ordenadas</h1>
+
+    <a href="pagina1.html">Página de links 1</a>
+
+    <h2>1. Listas Não Ordenadas</h2>
+    <p>Utilizam a tag <code>&lt;ul&gt;</code>. Os itens aparecem com marcadores (bullets). O atributo <code>type</code> define o estilo: <code>disc</code>, <code>circle</code> ou <code>square</code>.</p>
+    <ul type="square">
+        <li>Fateb</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <h2>2. Listas Ordenadas</h2>
+    <p>Utilizam a tag <code>&lt;ol&gt;</code>. Os itens são numerados automaticamente. O atributo <code>type</code> define o tipo: <code>1</code>, <code>a</code>, <code>A</code>, <code>i</code> ou <code>I</code>. O atributo <code>start</code> define o início da numeração.</p>
+    <ol type="I">
+        <li>Estrutura do documento HTML</li>
+        <li>Tags de Formatação</li>
+        <li>Listas</li>
+        <li>Tabelas</li>
+    </ol>
+
+    <h2>3. Listas Aninhadas</h2>
+    <p>Listas podem ser combinadas: listas ordenadas dentro de não ordenadas e vice-versa, criando estruturas hierárquicas.</p>
     <ul type="square">
         <li>
             Fateb
@@ -22,26 +44,27 @@
                 <li>
                     Dificuldades
                     <ul type="circle">
-                        <li>Algotimos</li>
+                        <li>Algoritmos</li>
                         <li>Criação de sites</li>
                     </ul>
                 </li>
             </ol>
         </li>
     </ul>
+
     <br>
-    <br>
+
     <ul type="circle">
         <li>
             HTML
             <ol type="I">
                 <li>Estrutura do documento HTML</li>
-                <li>Tags de Formação</li>
+                <li>Tags de Formatação</li>
                 <li>
                     Lista
                     <ol type="a">
-                        <li>Lista Ordenadas</li>
-                        <li>Lista Não ordenadas</li>
+                        <li>Lista Ordenada</li>
+                        <li>Lista Não ordenada</li>
                         <li>Lista de Definição</li>
                     </ol>
                 </li>
@@ -55,23 +78,22 @@
                     Tipos de Folhas de Estilo
                     <ol type="I" start="5">
                         <li>Folha de estilo Externa</li>
-                        <li>Folha de estilo Intera</li>
+                        <li>Folha de estilo Interna</li>
                         <li>Folha de estilo Inline</li>
                     </ol>
                 </li>
-                <li>
-                    Modelos de Caixa
-                </li>
+                <li>Modelos de Caixa</li>
             </ol>
         </li>
     </ul>
-    <br>
-    <br>
+
+    <h2>4. Listas de Definição</h2>
+    <p>Utilizam as tags <code>&lt;dl&gt;</code> (lista), <code>&lt;dt&gt;</code> (termo) e <code>&lt;dd&gt;</code> (definição). Ideais para glossários e dicionários.</p>
     <dl>
         <dt>HTML</dt>
-        <dd>HyperText Markup Language - Linguagem de marcação de Hipertexto</dd>
+        <dd>HyperText Markup Language – Linguagem de marcação de Hipertexto</dd>
         <dt>CSS</dt>
-        <dd>Cascading Syle Sheet - Folha de Estilo em Cascata</dd>
+        <dd>Cascading Style Sheet – Folha de Estilo em Cascata</dd>
     </dl>
 </body>
 
